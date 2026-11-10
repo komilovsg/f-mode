@@ -1,0 +1,25 @@
+{
+  "name": "f-mode",
+  "version": "1.0.0",
+  "description": "Token-economy mode: raw data never enters the context, only the result does. Filter before reading, never hide failures, verify summaries.",
+  "author": {
+    "name": "komilovsg",
+    "url": "https://github.com/komilovsg"
+  },
+  "homepage": "https://github.com/komilovsg/f-mode",
+  "license": "MIT",
+  "keywords": ["tokens", "context", "productivity", "testing", "logs"],
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cat \"${CLAUDE_PLUGIN_ROOT}/hooks/rule.md\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

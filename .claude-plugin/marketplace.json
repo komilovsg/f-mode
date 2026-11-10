@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "f-mode",
+  "description": "Token-economy working mode for Claude Code.",
+  "owner": {
+    "name": "komilovsg",
+    "url": "https://github.com/komilovsg"
+  },
+  "plugins": [
+    {
+      "name": "f-mode",
+      "description": "Raw data never enters the context; only the result does.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
